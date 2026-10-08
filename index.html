@@ -1,29 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flick SocialNetwork</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Flick — социальная сеть</title>
 </head>
 <body>
 <div class="main-container">
-    <header class="header">
-        <a href="index.html" class="brand">
-            <img src="images/image.png" class="logo" alt="Flick">
-            <span>Flicky</span>
+    <header class="header" id="header">
+        <a href="index.html" class="brand" id="brand">
+            <img src="images/image.png" class="logo" id="logo" alt="Flick">
+            <span id="brand-name">Flicky</span>
         </a>
-
-        <nav class="nav">
-            <a href="index.html" class="active">Главная</a>
-            <a href="#">Сообщения</a>
-            <a href="#">Публикации</a>
-            <a href="#">Обсуждения</a>
-            <a href="#">Профиль</a>
+        <nav class="nav" id="main-nav">
+            <a href="index.html" class="active" id="nav-home">Главная</a>
+            <a href="#" id="nav-messages">Сообщения</a>
+            <a href="#" id="nav-posts">Публикации</a>
+            <a href="#" id="nav-discussions">Обсуждения</a>
         </nav>
-
-        <button class="login-btn">Войти</button>
+        <button class="login-btn" id="login-button">Войти</button>
     </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-badge" id="hero-badge">
+                    <span class="online-dot"></span>
+                    Flick
+                </div>
+                <h1 id="hero-title">Добро пожаловать<br>в <span>Flick.</span></h1>
+                <p id="hero-description">Место, где люди собираются вокруг любимых интересов, общаются и находят новых людей.</p>
+                <div class="hero-buttons" id="hero-buttons">
+                    <button class="primary-btn" id="find-community-button">
+                        Найти своё сообщество
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="secondary-btn" id="about-button">Узнать больше</button>
+                </div>
+            </div>
+            <div class="hero-glow"></div>
+        </section>
+        <section class="section" id="interests-section">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">НАЧНИ ОТСЮДА</span>
+                    <h2>Что тебе интересно?</h2>
+                </div>
+                <a href="#" id="all-interests-link">Смотреть всё <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="interests" id="interests">
+                <div class="interest-card" id="interest-programming">
+                    <div class="interest-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Программирование</h3>
+                    <span>0 участников</span>
+                </div>
+                <div class="interest-card" id="interest-games">
+                    <div class="interest-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3>Игры</h3>
+                    <span>0 участников</span>
+                </div>
+                <div class="interest-card" id="interest-music">
+                    <div class="interest-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Музыка</h3>
+                    <span>0 участников</span>
+                </div>
+                <div class="interest-card" id="interest-movies">
+                    <div class="interest-icon"><i class="fa-solid fa-film"></i></div>
+                    <h3>Кино</h3>
+                    <span>0 участников</span>
+                </div>
+                <div class="interest-card" id="interest-business">
+                    <div class="interest-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>Бизнес</h3>
+                    <span>0 участников</span>
+                </div>
+                <div class="interest-card" id="interest-sport">
+                    <div class="interest-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>Спорт</h3>
+                    <span>0 участников</span>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="communities-section">
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">ПОПУЛЯРНОЕ</span>
+                    <h2>Сообщества</h2>
+                </div>
+                <a href="#" id="all-communities-link">Все сообщества <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="communities" id="communities">
+                <div class="community-card" id="community-javascript">
+                    <div class="community-top">
+                        <div class="community-icon purple"><i class="fa-brands fa-js"></i></div>
+                        <div class="community-online"><span></span>0 онлайн</div>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Обсуждаем JavaScript, веб-разработку и всё вокруг программирования.</p>
+                    <div class="community-bottom">
+                        <span>0 участников</span>
+                        <button id="join-javascript">Войти <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="community-card" id="community-minecraft">
+                    <div class="community-top">
+                        <div class="community-icon blue"><i class="fa-solid fa-cube"></i></div>
+                        <div class="community-online"><span></span>0 онлайн</div>
+                    </div>
+                    <h3>Minecraft</h3>
+                    <p>Серверы, моды, сборки, строительство и всё о Minecraft.</p>
+                    <div class="community-bottom">
+                        <span>0 участников</span>
+                        <button id="join-minecraft">Войти <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="community-card" id="community-music">
+                    <div class="community-top">
+                        <div class="community-icon pink"><i class="fa-solid fa-music"></i></div>
+                        <div class="community-online"><span></span>0 онлайн</div>
+                    </div>
+                    <h3>Музыка</h3>
+                    <p>Новые треки, исполнители, рекомендации и музыкальные находки.</p>
+                    <div class="community-bottom">
+                        <span>0 участников</span>
+                        <button id="join-music">Войти <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="live-section" id="live-section">
+            <div class="live-info">
+                <div class="live-title"><span class="live-dot"></span>Сейчас в Flick</div>
+                <h2>Всегда есть с кем<br><span>поговорить.</span></h2>
+                <p>Общайтесь, обсуждайте интересы и находите людей со схожими увлечениями.</p>
+            </div>
+            <div class="live-stats" id="live-stats">
+                <div class="stat" id="online-users">
+                    <strong>0</strong>
+                    <span>сейчас онлайн</span>
+                </div>
+                <div class="stat" id="active-communities">
+                    <strong>0</strong>
+                    <span>активных сообществ</span>
+                </div>
+                <div class="stat" id="voice-rooms">
+                    <strong>0</strong>
+                    <span>голосовых комнат</span>
+                </div>
+            </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>
