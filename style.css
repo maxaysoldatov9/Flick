@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 15%, #6d28d955, transparent 30%),
+        radial-gradient(circle at 85% 85%, #8b5cf655, transparent 30%),
+        linear-gradient(135deg, #030005, #0d0018, #030005);
+    color: white;
+    overflow-x: hidden;
+}
+.header {
+    height: 70px;
+    padding: 0 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(10, 5, 20, 0.75);
+    backdrop-filter: blur(20px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav a {
+    color: #aaa;
+    text-decoration: none;
+
+    font-family: 'Sora', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.nav a.active {
+    color: #a855f7;
+}
+
+.login-btn {
+    padding: 11px 22px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+
+    color: white;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.25);
+
+    transition: 0.25s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 35px rgba(139, 92, 246, 0.45);
+}
